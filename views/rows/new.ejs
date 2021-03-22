@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Mongoose Rows</title>
+    <title>Mongoose New Rows</title>
 </head>
+
 <body>
-    <h1>New Row</h1>
-    <form action="/rows" method="POST">
+  <div class="main">
+
+    <nav class="links-nav">
+            <a href="/" id='home-link'>Go Home</a>
+            <a href="/rows" id='all-rows-link'>All Rows</a>
+            <a href="/rows/new" id='new-row-link'>Add New Row</a>
+        </nav> 
+
+    <h1>New Right of Way</h1>
+
+    <form action="/rows" method="POST" autocomplete="off">
+
         <label>Name:
             <input type="text" name="name">
         </label>
-        <label>Town:
-            <input type="text" name="town">
+
+        <label>Town
+          <select name="town">
+            <option value="Newport">Newport</option>
+            <option value="Middletown">Middletown</option>
+            <option value="Portsmouth">Portsmouth</option>
+          </select>
         </label>
+
+  
+
         <label>Debris:
             <input type="text" name="debris">
         </label>
+
         <label>Description
             <textarea name="description"></textarea>
         </label>
+
         <label>Rating
             <select name="rating">
                 <option value="1">1</option>
@@ -31,10 +52,13 @@
                 <option value="5">5</option>
             </select>
         </label>
-        <label>
-            <input type="submit" value="ADD">
-        </label>
-    </form>
-</body>
 
+        <label>
+            <input type="submit" value="Add Row">
+        </label>
+
+    </form>
+
+  </div>
+</body>
 </html>

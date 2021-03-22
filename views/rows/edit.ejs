@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Edit A ROW</title>
 </head>
 
 <body>
-    <h1>Edit Row</h1>
-    <form action="/rows/<%=row._id%>?_method=PUT" method="POST">
-        <label>Name:
-            <input type="text" name="name" value="<%= row.name %>">
-        </label>
-        <label>Town:
-            <input type="text" name="town" value="<%= row.town %>">
-        </label>
-        <label>Debris:
-            <input type="text" name="debris" value="<%= row.debris %>">
-        </label>
-        <label>Description:
-            <textarea name="description"><%= row.description %></textarea>
-            <!-- There no value attribute for textarea -->
-        </label>
-        <label>Rating
-            <select name="rating">
-                <option value="<%= row.rating %>">
-                    <%= row.rating %>
-                </option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </label>
-        <label>
-            <input type="submit" value="Edit">
-        </label>
-    </form>
-</body>
+    <div class ="main">
 
+        <nav class="links-nav">
+            <a href="/" id='home-link'>Go Home</a>
+            <a href="/rows" id='all-rows-link'>All Rows</a>
+            <a href="/rows/new" id='new-row-link'>Add New Row</a>
+        </nav>
+
+        <h1>Edit Row</h1>
+
+        <form action="/rows/<%=row._id%>?_method=PUT" method="post">
+
+            <label>Name:
+                <input type="text" name="name" value="<%= row.name %>">
+            </label>
+
+            <label>Town
+                <select name="town">
+                    <option value="Newport">Newport</option>
+                    <option value="Middletown">Middletown</option>
+                    <option value="Portsmouth">Portsmouth</option>
+                </select>
+            </label>
+
+            <label>Debris:
+                <input type="text" name="debris" value="<%= row.debris %>">
+            </label>
+
+            <label>Description:
+                <textarea name="description"><%= row.description %></textarea>
+            </label>
+
+            <label>Rating
+                <select name="rating">
+                    <option value="<%= row.rating %>">
+                        <%= row.rating %>
+                    </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+
+            <label>
+                <input type="submit" value="Submit Edits" id="add-row">
+            </label>
+
+        </form>
+
+    </div>
+</body>
 </html>
