@@ -9,35 +9,97 @@
 </head>
 
 <body>
-    <div class="main">
 
-         <nav class="links-nav">
+<div class="main">
+    <nav class="links-nav">
             <a href="/" id='home-link'>Go Home</a>
             <a href="/rows" id='all-rows-link'>All Rows</a>
             <a href="/rows/new" id='new-row-link'>Add New Row</a>
-        </nav> 
+        </nav>
 
-    <h1>Details</h1>
 
-    <ul>
-        <li>Name: <%=row.name%>
-        </li>
-        <li>Town: <%=row.town%>
-        </li>
-        <li>Debris: <%=row.debris%>
-        </li>
-        <li>Description: <%=row.description%>
-        </li>
-        <li>Rating: <%=row.rating%>
-        </li>
-    </ul>
+    <section id="show-page">
+  <div>Name:</div>
+  <div><%= row.name %></div>
+  <div>Town:</div>
+  <div><%= row.town %></div>
+    <div>Debris:</div>
+  <div><%= row.debris %></div>
+  <div>Description:</div>
+  <div><%= row.description %></div>
+  <div>Rating:</div>
+  <div><%= row.rating %></div>
+</section>
 
-    <a href="/rows/<%=row._id%>/edit">Edit</a>
+<h2>Reviews</h2>
+
+<% if (row.reviews.length) { %>
+<table>
+   <thead>
+            <th>Name</th>
+            <th>Town</th>
+            <th>Debris</th>
+            <th>Description</th>
+            <th>Rating</th>
+    </thead>
+  <tbody>
+    <% row.reviews.forEach(function(row) { %>
+    <tr>
+      <td><%= row.name %></td>
+      <td><%= row.town %></td>
+      <td><%= row.debris %></td>
+      <td><%= row.description %></td>
+      <td><%= row.rating %></td>
+    </tr>
+    <% }); %>
+  </tbody>
+<tbody>
+            <% rows.forEach(row => { %>
+                <tr>
+                    <td><%= row.name %></td>
+                    <td><%= row.town %></td>
+                    <td><%= row.debris%></td>
+                    <td><%= row.description%></td>
+                    <td><%= row.rating %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+</table>
+<% } else { %>
+<h5>No Reviews Yet</h5>
+<% } %>
+
+<h2>Add a review:</h2>
+<form
+  id="add-review-form"
+  method="POST"
+  action="/rows/<%= row._id %>/reviews"
+>
+  <label>Review:</label>
+  <textarea name="content"></textarea>
+
+  <label>Rating:</label>
+  <select name="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
+  <input type="submit" value="Add Review" />
+</form>
+
+ <a href="/rows/<%=row._id%>/edit">Edit</a>
 
     <form action="/rows/<%=row._id%>?_method=DELETE" method="POST">
         <button type="submit">Delete</button>
     </form>
     
-    </div>
+
+
+
+</div>
+
 </body>
 </html>

@@ -29,16 +29,6 @@ function newRow(req, res) {
     res.render('rows/new');
 }
 
-/*
-v2
-
-function create(req, res) {
-    Row.create(req.body, (err, row) => {
-        res.redirect('/rows');
-    });
-}
-*/
-
 function create(req, res) {
   // we need to sanitize our data
 	for (key in req.body) {
