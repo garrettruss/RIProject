@@ -46,13 +46,13 @@ function create(req, res) {
 
 function edit(req, res) {
     Row.findById(req.params.id, (err, row) => {
-        res.render(`rows/edit`, { row });
+        res.render('rows/edit', { row });
     })
 }
 
 
 function update(req, res) {
-    row.findByIdAndUpdate(req.params.id, req.body, (err, updatedRow) => {
+    Row.findByIdAndUpdate(req.params.id, req.body, (err, updatedRow) => {
         res.redirect('/rows');
     });
 }
