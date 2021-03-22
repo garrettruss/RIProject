@@ -13,12 +13,12 @@
 
         <nav class="links-nav">
             <a href="/" id='home-link'>Go Home</a>
-            <a href="/rows" id='all-rows-link'>All Rows</a>
-            <a href="/rows/new" id='new-row-link'>Add New Row</a>
+            <a href="/rows" id='all-rows-link'>All Right-Of-Ways</a>
+            <a href="/rows/new" id='new-row-link'>Add New Right-Of-Way</a>
         </nav> 
 
         <main>
-            <h1>Row Index</h1>
+            <h1>Right of Way Catalog</h1>
             <table>
                 <thead>
                     <th>Name</th>
@@ -33,7 +33,7 @@
                             <td><%= row.name %></td>
                             <td><%= row.town %></td>
                             <td><%= row.description %></td>
-                            <td><a href="/rows/<%=row._id%>">Details</a></td>
+                            <td><a href="/rows/<%=row._id%>">Further Details</a></td>
                         </tr>
                     <% }) %>
                 </tbody>

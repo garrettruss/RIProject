@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const port = process.env.PORT || 3000;
+
 const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index');
@@ -9,6 +10,7 @@ const reviewsRouter = require('./routes/reviews');
 
 
 const app = express();
+
 require('dotenv').config();
 require('./config/database');
 
@@ -18,8 +20,10 @@ app.set('view engine', 'ejs');
 
 // Mount middleware with app.use()  
 app.use(morgan('dev'));
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
+
 app.use(methodOverride('_method'));
 
 //use routes

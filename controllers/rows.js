@@ -26,7 +26,7 @@ function show(req, res) {
 
 
 function newRow(req, res) {
-    res.render('rows/new');
+    res.render('rows/new', { title: "Add Right-Of-Way" });
 }
 
 function create(req, res) {

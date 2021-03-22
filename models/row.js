@@ -16,8 +16,7 @@ const reviewSchema = new Schema(
     visitDate: {
         type: Date,
         default: function() {
-            const year = new Date().getFullYear();
-            return year;
+            return new Date().getFullYear();
     },
   },
 },
