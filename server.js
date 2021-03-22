@@ -9,7 +9,7 @@ const reviewsRouter = require('./routes/reviews');
 
 
 const app = express();
-
+require('dotenv').config();
 require('./config/database');
 
 
