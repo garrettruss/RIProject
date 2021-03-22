@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/style.css">
+    <title>Mongoose Rows</title>
+</head>
+    <body>
+        <nav class="links-nav">
+            <a href="/" id='home-link'>Go Home</a>
+            <a href="/rows" id='all-rows-link'>All Rows</a>
+            <a href="/rows/new" id='new-row-link'>Add New Row</a>
+        </nav>  
+            <main>
+                <%rows.forEach((row)=>{%>
+                    <article class="row-container">
+                        <dir class="row-details">
+                            <p>Name: <%=row.name%>
+                            </p>
+                            <p>Town: <%=row.town%>
+                            </p>
+                            <p>Description: <%=row.description%>
+                            </p>
+                            <a href="/rows/<%=row._id%>">Details</a>
+                        </dir>
+                    </article>
+                    <%}); %>
+            </main>
+    </body>
+
+</html>
+
+
+

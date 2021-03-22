@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mongoose Rows</title>
+</head>
+<body>
+    <h1>New Row</h1>
+    <form action="/rows" method="POST">
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <label>Town:
+            <input type="text" name="town">
+        </label>
+        <label>Debris:
+            <input type="text" name="debris">
+        </label>
+        <label>Description
+            <textarea name="description"></textarea>
+        </label>
+        <label>Rating
+            <select name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </label>
+        <label>
+            <input type="submit" value="ADD">
+        </label>
+    </form>
+</body>
+
+</html>

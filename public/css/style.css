@@ -1,0 +1,31 @@
+.main {
+    background-color: rgba(0, 128, 39, .85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    padding: 5%;
+    margin: 5%;
+    font-size: 1.5 rem;
+    font-weight: 200;
+    border-radius: 5%;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.links-nav{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15%;
+    height: 5vh;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
