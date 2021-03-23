@@ -6,14 +6,11 @@ const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index');
 const rowsRouter = require('./routes/rows');
-const reviewsRouter = require('./routes/reviews');
-
 
 const app = express();
 
 require('dotenv').config();
 require('./config/database');
-
 
 //app middleware
 app.set('view engine', 'ejs');
@@ -29,7 +26,6 @@ app.use(methodOverride('_method'));
 //use routes
 app.use('/', indexRouter);
 app.use('/rows', rowsRouter);
-app.use('/', reviewsRouter);
 
 app.listen(port, () => {
     console.log(`Express is listening on on port: ${port}`);

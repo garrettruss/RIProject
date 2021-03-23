@@ -11,11 +11,12 @@
 <body>
 
 <div class="main">
-   <nav class="links-nav">
+
+    <nav class="links-nav">
         <a href="/" id='home-link'>Home</a>
-        <a href="/rows" id='all-rows-link'>View all entries for the Earth Week Challenge!</a>
-        <a href="/rows/new" id='new-row-link'>Log New Trip To Access Point</a>
-    </nav>  
+        <a href="/rows" id='all-rows-link'>View all entries!</a>
+        <a href="/rows/new" id='new-row-link'>Log New Trip!</a>
+    </nav> 
 
     <section id="show-page">
         <h1>All Trip Details</h1>
@@ -43,14 +44,14 @@
         <div>Safe Access to Ocean?</div>
         <div><%= row.access %></div>
         <br>
-        <div>Date of Visit</div>
+        <div>Date of Visit:</div>
         <div><%= row.visitDate %></div>
     </section>
 
-    <a href="/rows/<%=row._id%>/edit">Edit</a>
+    <a href="/rows/<%=row._id%>/edit">Edit Entry</a>
 
     <form action="/rows/<%=row._id%>?_method=DELETE" method="POST">
-        <button type="submit">Delete</button>
+        <button type="submit">Delete Entry</button>
     </form>
     
 </div>

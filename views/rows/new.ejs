@@ -6,19 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Mongoose New Rows</title>
+    <title>New Student Entry</title>
 </head>
 
 <body>
   <div class="main">
 
-  <nav class="links-nav">
-            <a href="/" id='home-link'>Home</a>
-            &nbsp;
-            <a href="/rows" id='all-rows-link'>View all entries for the Earth Month Challenge!</a>
-            &nbsp;
-            <a href="/rows/new" id='new-row-link'>Log New Trip To Access Point</a>
-        </nav>   
+    <nav class="links-nav">
+      <a href="/" id='home-link'>Home</a>
+      <a href="/rows" id='all-rows-link'>View all entries!</a>
+        <a href="/rows/new" id='new-row-link'>Log New Trip!</a>
+    </nav>   
 
     <h1>Log your visit to our Rights-Of-Ways!</h1>
 
@@ -59,25 +57,25 @@
         <br>
         <label>How Likely Are You To Return?
             <select name="rating">
-                <option value="1">1 - Not Likely</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Defintely Coming Back!</option>
+                <option value="1">1 - Definitely Not!</option>
+                <option value="2">2 - Not Likely</option>
+                <option value="3">3 - Maybe</option>
+                <option value="4">4 - Likely</option>
+                <option value="5">5 - Definitely Coming Back!</option>
             </select>
         </label>
         <br>
         <br>
         <label>Is There Safe Access To The Water?:
             <select name="access">
-                <option value="True">True</option>
-                <option value="False">False</option>
+                <option value="Yes">Yes</option>
+                <option value="Yes">No</option>
             </select>
         </label>
         <br>
         <br>
         <label>Date of Visit
-          <input type="date" name="visitDate">
+          <input type="datetime-local" name="visitDate">
         </label>
         <br>
         <br>

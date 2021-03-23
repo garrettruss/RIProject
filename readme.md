@@ -1,6 +1,8 @@
-# Rhode Island Public Access Monitoring Forum
+# Aquidneck Island Earth Month Challenge
 
-This is a simple full stack application that shows Rhode Island Public Access Right-of-Ways (ROWs) and allows users to creater, read, update, or delete right-of-ways from the listing. Target audience, Aquidneck Island middle school students.
+This app is designed to encourage students to get outside and explore Aquidneck Island's public access to the shoreline at designated rights-of-ways. It is themed to be part of a community wide Earth Month initiative that challenges students to visit as many public access sites as possible. This competition amongst the students to visit public access sites is designed to educate students about the value of public access and taking care of the locations.
+
+Current functionaliy: Students can add their trips to a index that displays all entries in a summarized view. Users may then click into a log to see further details and or edit or delete the log.
 
 ## Technologies Used
 
@@ -11,13 +13,20 @@ This is a simple full stack application that shows Rhode Island Public Access Ri
 * Express
 * Node.js
 * Git/Github
+* Heroku
+* RI CRMC ArcGIS Map [view here](https://arcg.is/1DeSmD).
 
 ## Getting Started
 
-[click](https://ri-access-project.herokuapp.com/) to see the app.
+[view here](https://ri-access-project.herokuapp.com/) to see the app.
 
 ### Future Enhancements
 
-* Utilize RIGIS public access api [click](https://www.rigis.org/datasets/public-shoreline-access/)
-* Sort entries by students name.
-* Add users who can favorite different locations.
+* Pull in RIGIS public access API to allow users to select or search for location from library and display photo associated with location. [view here](https://www.rigis.org/datasets/public-shoreline-access/)
+* Impliment mobile first design.
+* Add user login with bcrypt.
+* Sort entries by student or users if enabled.
+* Allow only the creator of an entry to edit or delete the entry.
+* Past certain number of entries, display leaderboard to show only top ten students with the most entries.
+* With users, make it so whenever a student logs a new trip to an access point, they have the option to share it on their social media platforms.
+* Impliment partials, header and footer, for better design.
