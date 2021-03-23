@@ -122,14 +122,16 @@ tr:nth-child(odd) {
 
 .pic {
     background-image: url(../images/Pell-Bridge.jpg);
+    position: fixed;
+    bottom: 0;
     background-size: 100%;
     background-repeat: no-repeat;
-    display: flex;
+    width: 100%;
+    height: 45vh;
     align-items:center;
     justify-content: center;
-    height: 100vh;
-    color: white;
-    flex-shrink: 0;
+    align-content: center;
+    flex-grow: 1;
 }
 
 .resources {
