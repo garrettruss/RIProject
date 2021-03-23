@@ -47,13 +47,15 @@
         <div>Date of Visit:</div>
         <div><%= row.visitDate %></div>
     </section>
+        <br>
+    <div class="buttons">
+        
+        <a href="/rows/<%=row._id%>/edit" class ="editbtn">Edit Entry</a>
 
-    <a href="/rows/<%=row._id%>/edit">Edit Entry</a>
-
-    <form action="/rows/<%=row._id%>?_method=DELETE" method="POST">
-        <button type="submit">Delete Entry</button>
-    </form>
-    
+        <form action="/rows/<%=row._id%>?_method=DELETE" method="POST">
+            <button type="submit">Delete Entry</button>
+        </form>
+    </div>  
 </div>
 
 </body>
