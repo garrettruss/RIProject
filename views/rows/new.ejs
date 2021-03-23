@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,48 +14,76 @@
 
   <nav class="links-nav">
             <a href="/" id='home-link'>Home</a>
-            <a href="/rows" id='all-rows-link'>View all entries for the Earth Week Challenge!</a>
+            &nbsp;
+            <a href="/rows" id='all-rows-link'>View all entries for the Earth Month Challenge!</a>
+            &nbsp;
             <a href="/rows/new" id='new-row-link'>Log New Trip To Access Point</a>
         </nav>   
 
-    <h1>New Right of Way</h1>
+    <h1>Log your visit to our Rights-Of-Ways!</h1>
 
     <form action="/rows" method="POST" autocomplete="off">
-
-        <label>Name:
-            <input type="text" name="name">
+        <label>Student:
+          <input type="text" name="participant" placeholder="Jane Smith">
         </label>
-
-        <label>Town
+        <br>
+        <br>
+        <label>School:
+              <input type="text" name="school" placeholder="Portsmouth Middle School">
+        </label>
+        <br>
+        <br>
+        <label>Right-of-Way Name:
+            <input type="text" name="name" placeholder="Lee's Wharf">
+        </label>
+        <br>
+        <br>
+        <label>Right-of-Way Town
           <select name="town">
             <option value="Newport">Newport</option>
             <option value="Middletown">Middletown</option>
             <option value="Portsmouth">Portsmouth</option>
           </select>
         </label>
-
+        <br>
+        <br>
         <label>Debris:
-            <input type="text" name="debris">
+            <textarea name="debris" placeholder="If you notice any litter, please provide feedback on roughly how much and the type."></textarea>
         </label>
-
+        <br>
+        <br>
         <label>Description
-            <textarea name="description"></textarea>
+            <textarea name="description" placeholder="Feel free to share any details from your trip!"></textarea>
         </label>
-
-        <label>Rating
+        <br>
+        <br>
+        <label>How Likely Are You To Return?
             <select name="rating">
-                <option value="1">1</option>
+                <option value="1">1 - Not Likely</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 - Defintely Coming Back!</option>
             </select>
         </label>
-
-        <label>
-            <input type="submit" value="Add Right-Of-Way">
+        <br>
+        <br>
+        <label>Is There Safe Access To The Water?:
+            <select name="access">
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select>
         </label>
-
+        <br>
+        <br>
+        <label>Date of Visit
+          <input type="date" name="visitDate">
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="submit" value="Log Trip!">
+        </label>
     </form>
 
   </div>

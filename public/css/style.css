@@ -1,5 +1,11 @@
+body {
+    background-color: rgba(21, 78, 143, 0.85) ;
+    height: 100%;
+}
+
+
 .main {
-    background-color: rgba(0, 128, 39, .85);
+    background-color: rgba(46, 139, 87, .85);
     color: white;
     display: flex;
     flex-direction: column;
@@ -12,9 +18,17 @@
     border-radius: 5%;
 }
 
-body {
-    background-color: aliceblue;
-}
+/*
+.top-image {
+    background-image:  url(../images/Pell-Bridge.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    min-height: 50vh;
+
+    }
+*/
 
 .links-nav{
     background-color: lightgray;

@@ -33,8 +33,6 @@ function create(req, res) {
    });
  });
 }
-
-
 */
 
 /*
@@ -57,7 +55,6 @@ function create(req, res) {
 	for (key in req.body) {
 		if (req.body[key] === "") delete req.body[key];
 	}
-
   Row.create(req.body, function(err, row) {
 // one way to handle errors
     if (err) return res.redirect('/rows/new');
@@ -68,7 +65,6 @@ function create(req, res) {
 */
 
 /*
-
 function update(req, res) {
     Row.findByIdAndUpdate(req.params.id, req.body, (err, updatedRow) => {
         res.redirect('/rows');

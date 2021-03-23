@@ -12,80 +12,40 @@
 
 <div class="main">
    <nav class="links-nav">
-            <a href="/" id='home-link'>Home</a>
-            <a href="/rows" id='all-rows-link'>View all entries for the Earth Week Challenge!</a>
-            <a href="/rows/new" id='new-row-link'>Log New Trip To Access Point</a>
-        </nav>  
+        <a href="/" id='home-link'>Home</a>
+        <a href="/rows" id='all-rows-link'>View all entries for the Earth Week Challenge!</a>
+        <a href="/rows/new" id='new-row-link'>Log New Trip To Access Point</a>
+    </nav>  
 
     <section id="show-page">
-        <h1>Right of Way Details</h1>
-        <div>Name:</div>
+        <h1>All Trip Details</h1>
+        <div>Student:</div>
+        <div><%= row.participant %></div>
+        <br>
+        <div>School</div>
+        <div><%= row.school %></div>
+        <br>
+        <div>Right-of-Way Name:</div>
         <div><%= row.name %></div>
-        <div>Town:</div>
+        <br>
+        <div>Right-of-Way Town:</div>
         <div><%= row.town %></div>
+        <br>
         <div>Debris:</div>
         <div><%= row.debris %></div>
+        <br>
         <div>Description:</div>
         <div><%= row.description %></div>
-        <div>Rating:</div>
+        <br>
+        <div>Likelyhood of Returning:</div>
         <div><%= row.rating %></div>
+        <br>
+        <div>Safe Access to Ocean?</div>
+        <div><%= row.access %></div>
+        <br>
+        <div>Date of Visit</div>
+        <div><%= row.visitDate %></div>
     </section>
-
-    <h2>Reviews</h2>
-
-    <% if (row.reviews.length) { %>
-    <table>
-        <thead>
-            <th>Accessible</th>
-            <th>safetyRating</th>
-            <th>visitDate</th>
-        </thead>
-
-        <tbody>
-            <% row.reviews.forEach(function(row) { %>
-            <tr>
-                <td><%= row.accessible %></td>
-                <td><%= row.safetyRating %></td>
-                <td><%= row.visitDate %></td>
-            </tr>
-            <% }); %>
-        </tbody>
-
-        <tbody>
-            <% rows.forEach(row => { %>
-                <tr>
-                    <td><%= row.accessible %></td>
-                    <td><%= row.safetyRating %></td>
-                    <td><%= row.visitDate %></td>
-                </tr>
-            <% }) %>
-        </tbody>
-    </table>
-    <% } else { %>
-        <h5>No Reviews Yet</h5>
-    <% } %>
-
-    <h2>Add a review:</h2>
-
-    <form id="add-review-form" method="POST" action="/rows/<%= row._id %>/reviews">
-
-        <label>Access to Water:</label>
-        <input type="checkbox" name="accessible" checked>
-
-        <label>Safety Rating:</label>
-        <select name="safetyRating:">
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-            <option value="F">F</option>
-        </select>
-        
-        <Label>Date of Visit</Label>
-        <input type="Date">
-
-        <input type="submit" value="Add Review" />
-    </form>
 
     <a href="/rows/<%=row._id%>/edit">Edit</a>
 

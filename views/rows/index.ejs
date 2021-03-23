@@ -21,19 +21,19 @@
             <h1>Right of Way Catalog</h1>
             <table>
                 <thead>
-                    <th>Name</th>
-                    <th>Town</th>
-                    <th>Description</th>
-                    <th>Details</th>
+                    <th>Student</th>
+                    <th>School</th>
+                    <th>Right-of-Way Name</th>
+                    <th>All Details</th>
                 </thead>
             
                 <tbody>
                     <% rows.forEach(row => { %>
                         <tr>
+                            <td><%=row.participant %></td>
+                            <td><%= row.school %></td>
                             <td><%= row.name %></td>
-                            <td><%= row.town %></td>
-                            <td><%= row.description %></td>
-                            <td><a href="/rows/<%=row._id%>">Further Details</a></td>
+                            <td><a href="/rows/<%=row._id%>">All Details</a></td>
                         </tr>
                     <% }) %>
                 </tbody>
@@ -42,6 +42,9 @@
     </div>
 </body>
 </html>
+
+
+
 
 
 

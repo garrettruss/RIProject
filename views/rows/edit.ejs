@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +22,21 @@
 
         <form action="/rows/<%=row._id%>?_method=PUT" method="post">
 
-            <label>Name:
+             <label>Student:
+                <input type="text" name="participant" value="<%= row.participant %>">
+            </label>
+            <br>
+            <br>
+             <label>School:
+                <input type="text" name="school" value="<%= row.school %>">
+            </label>
+            <br>
+            <br>
+            <label>Right-of-Way Name:
                 <input type="text" name="name" value="<%= row.name %>">
             </label>
-
+            <br>
+            <br>
             <label>Town
                 <select name="town">
                     <option value="Newport">Newport</option>
@@ -32,32 +44,49 @@
                     <option value="Portsmouth">Portsmouth</option>
                 </select>
             </label>
-
+            <br>
+            <br>
             <label>Debris:
                 <input type="text" name="debris" value="<%= row.debris %>">
             </label>
-
+            <br>
+            <br>
             <label>Description:
                 <textarea name="description"><%= row.description %></textarea>
             </label>
-
-            <label>Rating
+            <br>
+            <br>
+            <label>Likelyhood to Return:
                 <select name="rating">
                     <option value="<%= row.rating %>">
                         <%= row.rating %>
                     </option>
-                    <option value="1">1</option>
+                    <option value="1">1 - Not Likely</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="5">5 - Defintely Coming Back!</option>
                 </select>
             </label>
 
+            <label>Safe Access to Ocean:
+                <select name="access">
+                    <option value="<%= row.access %>">
+                        <%= row.access %>
+                    <option value="True">True</option>
+                    <option value="False">False</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>Date of Visit
+                <input type="date" name="visitDate" value="<%= row.visitDate %>">
+            </label>
+            <br>
+            <br>
             <label>
                 <input type="submit" value="Submit Edits" id="add-row">
             </label>
-
         </form>
 
     </div>
