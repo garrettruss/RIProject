@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+:root {
+    --deep--blue: rgba(0, 58, 102, .9);
+    --sea-foam: rgba(97, 173, 187, .9);
+    --middle-blue: rgba(102, 198, 252, .9);
+    --dark-blue: rgba(0, 152, 207, .9);
+    --light--blue: rgba(215, 241, 244, .9);
+    --primary--font: 'Amiri', serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 
 body {
-    background-color: rgba(21, 78, 143, 0.85) ;
-    height: 100%;
+    background-color: var(--deep--blue);
+    font-family: var(--primary--font);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
 .main {
-    background-color: rgba(46, 139, 87, .85);
+    background-color: var(--sea-foam);
+    font-family: var(--primary--font);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-content: center;
-    padding: 5%;
-    margin: 5%;
+    padding: 2%;
+    margin: 2%;
     font-size: 1.5 rem;
     font-weight: 200;
     border-radius: 5%;
@@ -32,11 +53,12 @@ body {
 
 
 .links-nav{
-    background-color: lightgray;
+    background-color: var(--light--blue);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 5vh;
+    height: 4vh;
+    font-weight: 600;
 }
 
 h1, h2 {
@@ -45,7 +67,7 @@ h1, h2 {
 }
 
 .collapsible {
-    background-color: #eee;
+    background-color: var(--light--blue);
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -107,11 +129,18 @@ tr:nth-child(odd) {
     justify-content: center;
     height: 100vh;
     color: white;
-    padding: 5%;
-    margin: 5%;
     flex-shrink: 0;
 }
 
 .resources {
-    background-color: rgba(136, 177, 70, 0.85);
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
+    margin: 2%;
+    font-size: 1.5 rem;
+    font-weight: 200;
+    border-radius: 1%;
 }
