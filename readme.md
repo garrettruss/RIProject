@@ -30,13 +30,9 @@ Top of Log Entry : ![Top of Log Entry](https://github.com/garrettruss/RIProject/
 
 Bottom of Log Entry : ![Bottom of Log Entry](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Bottom of Log Entry")
 
-Top of Log Edit : ![Top of Log Edit](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Top of Log Edit")
+Top of Log Edit : ![Top of Log Edit](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Edit.png "Top of Log Edit")
 
-Bottom of Log Edit : ![Bottom of Log Edit](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Bottom of Log Edit")
-
-Top of Log Details : ![Top of Log Details](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Top of Log Details")
-
-Bottom of Log Details : ![Bottom of Log Details](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Bottom of Log Details")
+Top of Log Details : ![Top of Log Details](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Details.png "Top of Log Details")
 
 ## Getting Started
 
