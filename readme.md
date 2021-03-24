@@ -18,7 +18,25 @@ Current functionaliy: Students can add their trips to a index that displays all 
 
 ## App Design
 
-Markup : ![Top of Homepage](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Main.png "Top of Homepage")
+Top of Homepage : ![Top of Homepage](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Main.png "Top of Homepage")
+
+Bottom of Homepage : ![Bottom of Homepage](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Main.png "Bottom of Homepage")
+
+Top of Log : ![Top of Log](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Log.png "Top of Log")
+
+Bottom of Log : ![Bottom of Log](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log.png "Bottom of Log")
+
+Top of Log Entry : ![Top of Log Entry](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Log-Entry.png "Top of Log Entry")
+
+Bottom of Log Entry : ![Bottom of Log Entry](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Bottom of Log Entry")
+
+Top of Log Edit : ![Top of Log Edit](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Top of Log Edit")
+
+Bottom of Log Edit : ![Bottom of Log Edit](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Bottom of Log Edit")
+
+Top of Log Details : ![Top of Log Details](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Top of Log Details")
+
+Bottom of Log Details : ![Bottom of Log Details](https://github.com/garrettruss/RIProject/blob/main/public/images/Bottom-of-Log-Entry.png "Bottom of Log Details")
 
 ## Getting Started
 
