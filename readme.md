@@ -18,7 +18,7 @@ Current functionaliy: Students can add their trips to a index that displays all 
 
 ## App Design
 
-![Top of Homepage](/public/images/top-of-main.png)
+Markup : ![Top of Homepage](https://github.com/garrettruss/RIProject/blob/main/public/images/Top-of-Main.png "Top of Homepage")
 
 ## Getting Started
 
