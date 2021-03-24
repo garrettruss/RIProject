@@ -16,6 +16,10 @@ Current functionaliy: Students can add their trips to a index that displays all 
 * Heroku
 * RI CRMC ArcGIS Map [view here](https://arcg.is/1DeSmD).
 
+## App Design
+
+![Top of Homepage](/public/images/top-of-main.png)
+
 ## Getting Started
 
 [view here](https://ri-access-project.herokuapp.com/) to see the app.
