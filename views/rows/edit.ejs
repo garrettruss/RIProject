@@ -61,11 +61,11 @@
                     <option value="<%= row.rating %>">
                         <%= row.rating %>
                     </option>
-                    <option value="1">1 - Not Likely</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 - Defintely Coming Back!</option>
+                    <option value="1">1 - Definitely Not!</option>
+                    <option value="2">2 - Not Likely</option>
+                    <option value="3">3 - Maybe</option>
+                    <option value="4">4 - Likely</option>
+                    <option value="5">5 - Definitely Coming Back!</option>
                 </select>
             </label>
 
@@ -80,7 +80,7 @@
             <br>
             <br>
             <label>Date of Visit:
-                <input type="datetime" name="visitDate" value="<%= row.visitDate %>">
+                <input type="datetime-local" name="visitDate" value="<%= row.visitDate %>">
             </label>
             <br>
             <br>

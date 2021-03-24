@@ -16,16 +16,16 @@
             <a href="/rows" id='all-rows-link'>View All Entries!</a>
             <a href="/rows/new" id='new-row-link'>Log New Trip!</a>
         </nav>  
-
+        
         <main>
-            <h1>Right-of-Way Catalog</h1>
+            <h1>Right-of-Way Trips</h1>
             <div class="main-view">
                 <table>
                 <thead>
                     <th>Student</th>
                     <th>School</th>
-                    <th>Right-of-Way Name</th>
-                    <th>All Details</th>
+                    <th>Right-of-Way Visited</th>
+                    <th>Details</th>
                 </thead>
             
                 <tbody>
@@ -34,7 +34,7 @@
                             <td><%=row.participant %></td>
                             <td><%= row.school %></td>
                             <td><%= row.name %></td>
-                            <td><a href="/rows/<%=row._id%>">All Details</a></td>
+                            <td><a href="/rows/<%=row._id%>">View All Details</a></td>
                         </tr>
                     <% }) %>
                 </tbody>
@@ -42,7 +42,11 @@
             </div>
         </main>
     </div>
+    
 </body>
+<footer class='pic'>
+            <h2>Discover New Places</h2>
+        </footer>
 </html>
 
 

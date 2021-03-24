@@ -19,11 +19,11 @@
     </nav>   
 
     <section id="show-page">
-        <h1>All Trip Details</h1>
+        <h1>Trip Details</h1>
         <div>Student:</div>
         <div><%= row.participant %></div>
         <br>
-        <div>School</div>
+        <div>School:</div>
         <div><%= row.school %></div>
         <br>
         <div>Right-of-Way Name:</div>
@@ -55,7 +55,7 @@
         <form action="/rows/<%=row._id%>?_method=DELETE" method="POST">
             <button type="submit">Delete Entry</button>
         </form>
-    </div>  
+    </div> 
 </div>
 
 </body>
