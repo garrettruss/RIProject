@@ -63,3 +63,5 @@ function deleteRow(req, res) {
         res.redirect('/rows');
     })
 }
+
+//peacock - command shift p
